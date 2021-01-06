@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio JP Siesquen</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Big Shoulders Stencil Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/58278715f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>JP Siesquen</h1>
+                <p>Programador - Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>                
+            </div>
+        </header>
+        <section class="grid" id="grid">
+            <div class="item"
+            data-categoria="ciudades"
+            data-etiquetas="ciudades autos carros calles"
+            data-descripcion="1. New York la ciudad mas poblada del mundo">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="personas" 
+            data-etiquetas="personas mujeres"
+            data-descripcion="2. Penelope Cruz de España para el mundo">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="paisajes" 
+            data-etiquetas="paisajes montañas mar playas"
+            data-descripcion="3. Gibraltar al atardecer en sus costas">
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="animales" 
+            data-etiquetas="animales leon felino"
+            data-descripcion="4. León de la sabana africana">
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="animales" 
+            data-etiquetas="animales panda herbivoro"
+            data-descripcion="5. Panda en el zoologico de New York">
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="personas" 
+            data-etiquetas="personas mujeres"
+            data-descripcion="6. La chica del cabello de fuego">
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="paisajes" 
+            data-etiquetas="paisajes niebla altura"
+            data-descripcion="7. Densa neblina en las alturas de sudamerica">
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades san francisco puente golden gate"
+            data-descripcion="8. San Francisco junto al Golden Gate.">
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="naturaleza" 
+            data-etiquetas="naturaleza hojas plantas arboles"
+            data-descripcion="9. Hojas de coca orgullo del Perú">
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>                                    
+        </section>
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fas fa-times-circle"></i></button>
+                <img src="img/ciudad1.png" alt="">
+            </div>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, officia.</p>
+        </section>
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="#" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio creado por <a href="#">JP Siesquen</a>.</p>    
+            </div>
+        </footer>
+    </div>
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="main.js"></script>    
+</body>
+</html>
